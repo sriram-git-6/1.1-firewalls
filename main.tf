@@ -220,7 +220,7 @@ resource "aws_security_group_rule" "user_app_alb" {  # user accepting connection
 
 # This is allowing traffic from vpn to user
 
-resource "aws_security_group_rule" "redis_vpn" {  # redis accepting connections from vpn
+resource "aws_security_group_rule" "user_vpn" {  # redis accepting connections from vpn
   description = "allowing port number 22 from catalogue"
   type              = "ingress"
   from_port         = 22
